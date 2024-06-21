@@ -12,7 +12,7 @@ class Patient(models.Model):
     rg = models.CharField(max_length=100, blank=True, null=True)
 
     class Meta :
-        manage = True
+        managed = True
         db_table = 'patients'
     
 

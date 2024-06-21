@@ -19,9 +19,11 @@ from django.urls import include, path
 from rest_framework import routers
 
 from patient.api.viewsets import PatientViewSet
+from schedulling.api.viewset import SchedullingViewSet
 
 routers = routers.DefaultRouter()
 routers.register(r'patients', PatientViewSet)
+routers.register(r'schedulling', SchedullingViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
